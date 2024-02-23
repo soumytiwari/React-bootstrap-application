@@ -15,7 +15,7 @@ function App() {
     <Navbar title="Navbar_Text_Utils" info="About Utils" />
       {/* <Navbar/> */}
       <div className="stateLearn_container my-3 mx-5">
-        <TextForm heading="Write here, write here <3" btn_cap="Click to convert to UpperCase" />
+        <TextForm heading="Write here, write here <3" btn_cap="Click to convert to UpperCase" btn_low="Click to convert to LowerCase"/>
       </div>
     </div>
     </>
