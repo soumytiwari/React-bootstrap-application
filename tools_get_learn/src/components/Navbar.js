@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 export default function Navbar(props) {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
