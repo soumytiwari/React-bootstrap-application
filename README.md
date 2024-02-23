@@ -1,2 +1,2 @@
-# House_Predicto
-Application for house predictions 
+# React-bootstrap-application
+Application made using react, bootstrap, npm, node, etc.
