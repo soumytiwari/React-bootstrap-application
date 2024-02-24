@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
+import About from "./components/About";
 
 // props: the information that we would change when using, should not keep changing in the main component file.
 // Value defined while using it.
@@ -18,8 +19,6 @@ function App() {
         <Navbar
           title="Navbar_Text_Utils"
           info="About Utils"
-          searchText={searchText}
-          text={text}
         />
         {/* <Navbar/> */}
         <div className="stateLearn_container my-3 mx-5">
@@ -28,6 +27,9 @@ function App() {
             btn_cap="Click to convert to UpperCase"
             btn_low="Click to convert to LowerCase"
           />
+        </div>
+        <div className="darkMode">
+          <About/>
         </div>
       </div>
     </>

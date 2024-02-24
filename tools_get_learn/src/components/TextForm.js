@@ -35,6 +35,11 @@ export default function TextForm(props) {
         setText(newText)
     }
 
+    const handleReverse = () => {
+        let newText = text.split("").reverse().join("");
+        setText(newText);
+    }
+
     return (
         <>
         <div>
@@ -45,6 +50,7 @@ export default function TextForm(props) {
             <button type="button" className="btn btn-dark mx-1" onClick={convertToUpperCase}>{props.btn_cap}</button>
             <button type="button" className="btn btn-dark mx-1" onClick={convertToLowerCase}>{props.btn_low}</button>
             <button type="button" className="btn btn-dark mx-1" onClick={clearText}>Clear text</button>
+            <button type="button" className="btn btn-dark mx-1" onClick={handleReverse}>Reverse text</button>
         </div>
         <div className="container my-3">
             <h2>Your text summary</h2>
