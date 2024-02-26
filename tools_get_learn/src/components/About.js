@@ -4,12 +4,13 @@ import React from "react";
 
 export default function About() {
 
-    const handleMode = () => {
-        
-    }
+  const handleMode = () => {
+
+  }
 
   return (
     <>
+      <h2 className="my-3 mx-4">About us</h2>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -103,7 +104,7 @@ export default function About() {
         </div>
       </div>
       <div className="mode my-3 mx-1">
-      <button type="button" className="btn btn-info" onClick={handleMode}>Rnable Dark Mode</button>
+        <button type="button" className="btn btn-info" onClick={handleMode}>Rnable Dark Mode</button>
       </div>
     </>
   );
