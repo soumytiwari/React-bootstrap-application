@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import About from "./components/About";
+import { useState } from "react";
 
 // props: the information that we would change when using, should not keep changing in the main component file.
 // Value defined while using it.
@@ -13,6 +14,7 @@ function App() {
     color: "Black",
   };
 
+  const [counter, setCounter] = useState(0);
   return (
     <>
       <div style={appStyles}>
@@ -30,6 +32,11 @@ function App() {
         </div>
         <div className="darkMode">
           <About/>
+        </div>
+        <div className="count mx-5 my-3">
+          <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
+          <h2>{counter}</h2>
+          <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
         </div>
       </div>
     </>
